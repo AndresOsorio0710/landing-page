@@ -2,6 +2,8 @@
 
 Página web estática de currículum profesional, desarrollada con HTML, CSS y JavaScript puro. Diseño sobrio orientado a entornos empresariales con animaciones de desplazamiento reveladoras.
 
+Disponible online en [andresosorio0710.github.io/landing-page](https://andresosorio0710.github.io/landing-page/)
+
 ## Características
 
 - **Diseño responsive** adaptable a dispositivos móviles y escritorio

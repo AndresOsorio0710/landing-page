@@ -698,6 +698,7 @@ footer {
   justify-content: center;
   overflow: hidden;
   background: #f2f2f5;
+  width: 100%;
 }
 
 .flip-front .modal-photo,
@@ -801,10 +802,21 @@ footer {
     display: grid;
   }
 
+  .flip-front .modal-photo-wrap,
+  .flip-back .modal-photo-wrap {
+    min-height: unset;
+    max-height: unset;
+    width: 100%;
+  }
+
   .flip-front .modal-photo,
   .flip-back .modal-photo {
-    min-height: 220px;
-    max-height: 260px;
+    width: 100%;
+    height: auto;
+    min-height: unset;
+    max-height: unset;
+    object-fit: contain;
+    object-position: center top;
   }
 
   .flip-front .modal-info,
@@ -818,8 +830,22 @@ footer {
 }
 
 @media (max-width: 420px) {
+  .modal-card {
+    border-radius: 18px;
+  }
+
+  .flip-front .modal-photo-wrap,
+  .flip-back .modal-photo-wrap {
+    display: flex;
+    width: 100%;
+  }
+
   .flip-front .modal-photo,
   .flip-back .modal-photo {
-    min-height: 200px;
+    width: 100%;
+    height: auto;
+    min-height: unset;
+    max-height: unset;
+    object-fit: contain;
   }
 }
